@@ -18,7 +18,7 @@ export const Statistics = ({ title, stats }) => {
               <span class Name={css.label}>
                 {label}
               </span>
-              <span className={css.percentage}>{percentage}</span>
+              <span className={css.percentage}>{percentage}%</span>
             </li>
           ))}
       </ul>
@@ -32,7 +32,7 @@ Statistics.propTypes = {
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
-      percentage: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
     })
   ),
 };
